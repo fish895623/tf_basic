@@ -33,3 +33,14 @@ a = session.run(exp, feed_dict={X_3: x3_data, W_1: w1_data})
 session.close()
 
 a
+# %% [markdown]
+x4 = tf.placeholder(tf.float32, [2, 2])
+x4data = [[4, 5],
+          [7, 8]]
+
+w2 = tf.Variable(tf.random_normal([2, 2]))
+
+exp = tf.matmul(x4, w2)
+session = tf.Session()
+session.run(tf.global_variables_initializer())
+print(session.run(w2))
