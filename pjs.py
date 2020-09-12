@@ -2,7 +2,6 @@
 # Xpath를 이용한 뉴스 크롤링
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
-import time
 
 # 드라이버 생성
 # chromedriver 설치된 경로를 정확히 기재해야 함
